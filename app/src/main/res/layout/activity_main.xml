@@ -106,13 +106,15 @@
         android:layout_below="@id/title">
 
         <TextView
+            android:id="@+id/textLog"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:text="Login"
             android:textSize="30sp"
             android:textStyle="bold"
-            android:fontFamily="@font/fonts_sp_font_cyr"/>
+            android:fontFamily="@font/fonts_sp_font_cyr">
+        </TextView>
     </LinearLayout>
 
     <LinearLayout
@@ -127,6 +129,7 @@
         android:layout_below="@id/login">
 
         <TextView
+            android:id="@+id/textPas"
             android:text="Pass"
             android:fontFamily="@font/fonts_sp_font_cyr"
             android:layout_width="wrap_content"
@@ -135,13 +138,32 @@
             android:textSize="30sp"
             android:textStyle="bold"/>
     </LinearLayout>
-    <Button
-        android:layout_width="wrap_content"
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/pass"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:text="Registration"
-        android:textSize="16sp"
-        android:fontFamily="@font/fonts_sp_font_cyr"/>
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/logiInBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pass"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="Login In"
+            android:textSize="16sp"
+            android:fontFamily="@font/fonts_sp_font_cyr"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logiInBtn"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="Registration"
+            android:textSize="16sp"
+            android:fontFamily="@font/fonts_sp_font_cyr"/>
+    </LinearLayout>
+
 </RelativeLayout>
